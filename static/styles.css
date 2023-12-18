@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+div.container {
+  height: 100svh;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+header {
+  background-color: burlywood;
+}
+
+aside.sidebar {  
+  background-color: aquamarine;
+  grid-row: 1 / 3;  
+}
+
+main {
+  background-color: cornflowerblue;
+}
