@@ -1,3 +1,14 @@
+:root {
+  --dark-color: #342755;
+  --light-color: #9d9cde;
+  --yellow-color: #ffd500;
+  --light-yellow-color: #ffdf41;
+  --red-color: #f34848;
+  --shadow-color: #ddd;
+  --background-color: #eee;
+  --lightest-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;  
@@ -7,6 +18,7 @@
 html {
   font-size: 16px;
   font-family: Nunito, Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-color);
 }
 
 div.container {
@@ -17,9 +29,10 @@ div.container {
 }
 
 header {
+  background-color: var(--lightest-color);
   display: grid;
   padding: 20px;  
-  box-shadow: 0px 4px 10px #ddd;  
+  box-shadow: 0px 4px 10px var(--shadow-color);  
   z-index: 1;
 }
 
@@ -52,7 +65,7 @@ input#search {
   border-radius: 30px;
   padding: 8px 16px;
   border: none;
-  background-color: #eee;
+  background-color: var(--background-color);
 }
 
 .header-top > .right-side {
@@ -100,29 +113,29 @@ button.header-buttons {
   font-weight: 600;
   font-size: 1rem;
   min-width: 80px;
-  background-color: #ffd500;
+  background-color: var(--yellow-color);
   border: none;
   border-radius: 30px;
 }
 
 button.header-buttons:hover {
-  background-color: #ffdf41;
+  background-color: var(--light-yellow-color);
 }
 
 aside.sidebar {  
-  background-color: #282138;
+  background-color: var(--dark-color);
   grid-row: 1 / 3;  
   padding: 30px;
   z-index: 1;  
 }
 
-aside.sidebar span {
-  color: #9d9cde;
+aside.sidebar span,
+h2.sidebar {
+  color: var(--light-color);
 }
 
 h2.sidebar {
-  display: inline;
-  color: #9d9cde;
+  display: inline;  
 }
 
 svg#dashboard-icon {
@@ -132,15 +145,20 @@ svg#dashboard-icon {
 
 svg.sidebar-icons,
 svg#dashboard-icon {
-  fill: #9d9cde;
+  fill: var(--light-color);
+}
+
+svg.card-icons {
+  fill: var(--dark-color);
 }
 
 svg.sidebar-icons,
 svg.header-icons,
 svg.card-icons {
   height: 26px;
-  width: 26px;  
+  width: 26px;    
 }
+
 
 a.sidebar-item,
 div.sidebar-item {
@@ -151,8 +169,7 @@ div.sidebar-item {
   align-items: center;
 }
 
-a.sidebar-item {
-  color: black;
+a.sidebar-item {  
   text-decoration: none;
 }
 
@@ -171,7 +188,7 @@ ul.sidebar {
 
 main {
   padding: 20px;
-  background-color: #eee;
+  background-color: var(--background-color);
   display: grid;
   grid-template-columns: minmax(300px, 3fr) 1fr;
   gap: 20px;
@@ -207,9 +224,9 @@ article.project-card {
 article.project-card,
 #announcements > .announcements,
 #trending > .trending {
-  background-color: #fff;
+  background-color: var(--lightest-color);
   border-radius: 12px;  
-  box-shadow: 4px 4px 10px #ddd;
+  box-shadow: 4px 4px 10px var(--shadow-color);
 
 }
 
@@ -225,7 +242,7 @@ article.project-card::before {
   bottom: 0;
   left: 0;
   width: 10px;
-  background-color: #f34848;
+  background-color: var(--red-color);
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 }
@@ -251,7 +268,7 @@ p.trending {
 
 li.announcements:not(:last-of-type) {  
   padding-bottom: 14px;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid var(--shadow-color);
 }
 
 main > #trending {
