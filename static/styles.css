@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -137,6 +137,10 @@ main {
   gap: 20px;
 }
 
+h3 {
+  font-size: 1rem;
+}
+
 main > #projects {
   grid-column: 1;
   grid-row: 1 / 3;
@@ -163,9 +167,17 @@ article.project-card {
   justify-self: end;
 }
 
-main > #announcements {
+main > #announcements {  
   grid-column: 2;
   grid-row: 1;
+}
+
+#announcements > .announcements {  
+  padding: 20px;
+}
+
+p.announcements {
+  font-size: 0.9rem;
 }
 
 main > #trending {
