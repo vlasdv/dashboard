@@ -85,6 +85,18 @@ p.username {
   gap: 20px;
 }
 
+button.header-buttons {
+  font-weight: 600;
+  min-width: 80px;
+  background-color: #ffd500;
+  border: none;
+  border-radius: 30px;
+}
+
+button.header-buttons:hover {
+  background-color: #ffdf41;
+}
+
 aside.sidebar {  
   background-color: #ffd500;
   grid-row: 1 / 3;  
