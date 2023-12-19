@@ -6,7 +6,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Nunito, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 div.container {
@@ -110,19 +110,19 @@ button.header-buttons:hover {
 }
 
 aside.sidebar {  
-  background-color: #333;
+  background-color: #282138;
   grid-row: 1 / 3;  
   padding: 30px;
   z-index: 1;  
 }
 
 aside.sidebar span {
-  color: #fff;
+  color: #9d9cde;
 }
 
 h2.sidebar {
   display: inline;
-  color: #fff;
+  color: #9d9cde;
 }
 
 svg#dashboard-icon {
@@ -132,7 +132,7 @@ svg#dashboard-icon {
 
 svg.sidebar-icons,
 svg#dashboard-icon {
-  fill: #eee;
+  fill: #9d9cde;
 }
 
 svg.sidebar-icons,
