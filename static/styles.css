@@ -14,12 +14,12 @@ div.container {
   height: 100svh;
 
   display: grid;
-  grid-template-columns: minmax(27ch, 1fr) 5fr;
+  grid-template-columns: 29ch 5fr;
   grid-template-rows: 1fr 4fr;
 }
 
 header {
-  background-color: burlywood;
+  /* background-color: burlywood; */
   display: grid;
   padding: 20px;
 }
@@ -86,7 +86,7 @@ p.username {
 }
 
 aside.sidebar {  
-  background-color: aquamarine;
+  background-color: #ffd500;
   grid-row: 1 / 3;  
   padding: 30px;
 }
@@ -136,9 +136,9 @@ ul.sidebar {
 
 main {
   padding: 20px;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   display: grid;
-  grid-template-columns: minmax(400px, 3fr) 1fr;
+  grid-template-columns: minmax(300px, 3fr) 1fr;
   gap: 20px;
 }
 
@@ -158,7 +158,7 @@ h2.section-name {
 #projects > #projects-container {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 article.project-card {
