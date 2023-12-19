@@ -172,15 +172,28 @@ main > #announcements {
   grid-row: 1;
 }
 
-#announcements > .announcements {  
+#announcements > .announcements,
+#trending > .trending {  
   padding: 20px;
 }
 
-p.announcements {
+p.announcements,
+p.trending {
   font-size: 0.9rem;
 }
 
 main > #trending {
   grid-column: 2;
   grid-row: 2;
+}
+
+li.trending {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+li.trending > img.profile {
+  grid-column: 1;
+  grid-row: 1 / 3;
 }
