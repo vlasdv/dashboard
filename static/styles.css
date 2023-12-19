@@ -125,6 +125,11 @@ svg#dashboard-icon {
 }
 
 svg.sidebar-icons,
+svg#dashboard-icon {
+  fill: #fff;
+}
+
+svg.sidebar-icons,
 svg.header-icons,
 svg.card-icons {
   height: 26px;
