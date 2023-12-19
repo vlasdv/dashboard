@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;  
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@ div.container {
   height: 100svh;
 
   display: grid;
-  grid-template-columns: minmax(25ch, 1fr) 4fr;
+  grid-template-columns: minmax(27ch, 1fr) 5fr;
   grid-template-rows: 1fr 4fr;
 }
 
