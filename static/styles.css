@@ -191,10 +191,21 @@ article.project-card {
   height: 200px;
   padding: 20px 20px 20px 30px;
   display: grid;
-  align-content: space-between;
+  align-content: space-between;    
+}
+
+article.project-card,
+#announcements > .announcements,
+#trending > .trending {
   background-color: #fff;
-  border-radius: 12px;    
+  border-radius: 12px;  
   box-shadow: 4px 4px 10px #ddd;
+
+}
+
+#announcements > .announcements,
+#trending > .trending {  
+  padding: 20px;
 }
 
 article.project-card::before {
@@ -220,12 +231,7 @@ li.announcements > h3 {
 
 main > #announcements {  
   grid-column: 2;
-  grid-row: 1;
-}
-
-#announcements > .announcements,
-#trending > .trending {  
-  padding: 20px;
+  grid-row: 1;  
 }
 
 p.announcements,
@@ -250,7 +256,7 @@ li.trending {
 }
 
 li.trending:not(:last-of-type) {
-  padding-bottom: 12px;
+  padding-bottom: 4px;
 }
 
 li.trending > img.profile {
