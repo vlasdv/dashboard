@@ -95,11 +95,16 @@ h2.sidebar {
   display: inline;
 }
 
+svg#dashboard-icon {
+  height: 40px;
+  width: 40px;  
+}
+
 svg.sidebar-icons,
 svg.header-icons,
 svg.card-icons {
-  height: 36px;
-  width: 36px;  
+  height: 26px;
+  width: 26px;  
 }
 
 a.sidebar-item,
