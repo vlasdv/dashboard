@@ -100,6 +100,7 @@ p.username {
 
 button.header-buttons {
   font-weight: 600;
+  font-size: 1rem;
   min-width: 80px;
   background-color: #ffd500;
   border: none;
