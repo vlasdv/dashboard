@@ -168,6 +168,10 @@ article.project-card {
   align-content: space-between;
 }
 
+.card-content > h3 {
+  margin-bottom: 10px;
+}
+
 .project-card > .card-actions {
   justify-self: end;
 }
