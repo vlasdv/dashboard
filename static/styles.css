@@ -133,13 +133,34 @@ main {
   padding: 20px;
   background-color: cornflowerblue;
   display: grid;
-  grid-template-columns: minmax(300px, 3fr) 1fr;
+  grid-template-columns: minmax(400px, 3fr) 1fr;
   gap: 20px;
 }
 
 main > #projects {
   grid-column: 1;
   grid-row: 1 / 3;
+}
+
+h2.section-name {
+  margin-bottom: 20px;
+}
+
+#projects > #projects-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+article.project-card {
+  height: 200px;
+  padding: 20px;
+  display: grid;
+  align-content: space-between;
+}
+
+.project-card > .card-actions {
+  justify-self: end;
 }
 
 main > #announcements {
