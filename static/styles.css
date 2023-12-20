@@ -228,6 +228,10 @@ article.project-card {
   align-content: space-between;    
 }
 
+div.card-content {
+  display: grid;
+}
+
 div.img-wrapper {
   height: 150px;
   overflow: hidden;
@@ -239,7 +243,7 @@ div.img-wrapper {
 }
 
 div.img-wrapper > img.project-card-img {  
-  width: 300px;
+  max-width: 650px;
   height: auto;  
 }
 
@@ -276,6 +280,11 @@ li.announcements > h3 {
 .project-card > .card-actions {
   margin-top: 20px;
   justify-self: end;
+}
+
+div#main-right {
+  display: grid;
+  gap: 20px;
 }
 
 main > #announcements {  
