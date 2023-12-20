@@ -132,6 +132,7 @@ aside.sidebar {
 aside.sidebar span,
 h2.sidebar {
   color: var(--light-color);
+  margin-left: 10px;  
 }
 
 h2.sidebar {
@@ -184,6 +185,12 @@ li+li {
 
 ul.sidebar {
   margin-top: 50px;
+}
+
+a.sidebar-item:hover > span, 
+a.sidebar-item:hover > svg {
+  fill: var(--lightest-color);  
+  color: var(--lightest-color);  
 }
 
 main {
