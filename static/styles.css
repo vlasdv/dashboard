@@ -24,7 +24,7 @@ html {
 div.container {
   height: 100svh;
   display: grid;
-  grid-template-columns: 29ch 5fr;
+  grid-template-columns: 27ch 5fr;
   grid-template-rows: 1fr 4fr;
 }
 
