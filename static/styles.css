@@ -1,6 +1,7 @@
 :root {
   --dark-color: #342755;
-  --light-color: #9d9cde;
+  --main-text-color: #9d9cde;
+  --lighter-text-color: #b2b1e3;
   --yellow-color: #ffd500;
   --light-yellow-color: #ffdf41;
   --red-color: #f34848;
@@ -131,7 +132,7 @@ aside.sidebar {
 
 aside.sidebar span,
 h2.sidebar {
-  color: var(--light-color);
+  color: var(--main-text-color);
   margin-left: 10px;  
 }
 
@@ -146,7 +147,7 @@ svg#dashboard-icon {
 
 svg.sidebar-icons,
 svg#dashboard-icon {
-  fill: var(--light-color);
+  fill: var(--main-text-color);
 }
 
 svg.card-icons {
@@ -271,6 +272,11 @@ main > #announcements {
 p.announcements,
 p.trending {
   font-size: 0.9rem;
+}
+
+p.trending.tag,
+span.tag {
+  color: var(--lighter-text-color);
 }
 
 li.announcements:not(:last-of-type) {  
